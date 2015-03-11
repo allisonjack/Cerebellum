@@ -1,0 +1,1 @@
+cd /scratch/aj349/BIOPOINT_CRBLM/ADULT/SUIT/AC1440/FILTERED_FX; /usr/local/cluster/bin/matlab -nodisplay -nojvm -nosplash < /scratch/aj349/BIOPOINT_CRBLM/SCRIPTS/reslice_louise.m > MatlabRun.out 2> MatlabRun.err
