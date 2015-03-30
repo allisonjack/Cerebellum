@@ -1,0 +1,3 @@
+awk '{print $1}' CC_matched.txt | while read ID; do printf "${ID}.feat/stats/cope3.nii.gz "; done
+
+fslmerge -t fslmerge -t ../../../LVL3_SUIT/cope3_4D.nii.gz CC1036.feat/stats/cope3.nii.gz CC1041.feat/stats/cope3.nii.gz CC1052.feat/stats/cope3.nii.gz
