@@ -1,0 +1,1 @@
+source ~/.bashrc; cd /scratch/aj349/BIOPOINT_CRBLM/LVL3_SUIT; flameo --cope=cope3_4D --vc=varcope3_4D --mask=SUIT_2mm_mask --ld=stats --dm=design.mat --cs=design.grp --tc=design.con --runmode=flame12 --io --nj=10000 --bi=500 --se=1 --fm --zlt=2.25 --zut=2.65
