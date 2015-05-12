@@ -7,8 +7,7 @@ These materials, by
 <a property="cc:attributionName"
 rel="cc:attributionURL" href="https://github.com/allisonjack/Cerebellum">
 Allison Jack</a>,
-is licensed under a
+are licensed under a
 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
-Creative Commons Attribution-NonCommercial-ShareAlike License
-</a>.
+Creative Commons Attribution-NonCommercial-ShareAlike License</a>.
 </div>
