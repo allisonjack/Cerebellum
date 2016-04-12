@@ -2,7 +2,7 @@
 clear all
 
 %% Load SPM
-addpath(fullfile('/','home2', 'aj349', 'spm8'));
+addpath(fullfile('/','home2', 'USERNAME', 'spm12'));
 spm fmri
 
 %%Reslice filtered_func IN HIGHRES ANATOMICAL SPACE into SUIT space
