@@ -6,7 +6,7 @@ clear all
 spm fmri
 
 %% Load IDs
-fid = fopen('/Volumes/HIPPOCAMPUS/BIOPOINT_CRBLM/ADULT/SUIT/march3_IDs.txt');
+fid = fopen('/PATH_TO_YOUR_DIRECTORY/IDs.txt');
 ID = cell(0,1);
 
 while ~feof(fid)
@@ -16,7 +16,7 @@ end
 %% Create array with paths to subject directories
 SUBJDIR = cell(length(ID),1);
 for i = 1:length(ID)
-    SUBJDIR{i} = fullfile('/Volumes/HIPPOCAMPUS/BIOPOINT_CRBLM/ADULT/SUIT/', ID{i});
+    SUBJDIR{i} = fullfile('/PATH_TO_YOUR_DIRECTORY/', ID{i});
 end
 
 %% Crop anatomical and mask cerebellum
