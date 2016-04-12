@@ -1,1 +1,1 @@
-cd /scratch/aj349/BIOPOINT_CRBLM/ADULT/SUIT/AC1440/FILTERED_FX; /usr/local/cluster/bin/matlab -nodisplay -nojvm -nosplash < /scratch/aj349/BIOPOINT_CRBLM/SCRIPTS/reslice_louise.m > MatlabRun.out 2> MatlabRun.err
+cd /PATH_TO_YOUR_DIRECTORY/USERNAME/STUDYNAME/ADULT/SUIT/IDNUMBER/FILTERED_FX; /usr/local/cluster/bin/matlab -nodisplay -nojvm -nosplash < /PATH_TO_YOUR_DIRECTORY/USERNAME/STUDYNAME/SCRIPTS/reslice_louise.m > MatlabRun.out 2> MatlabRun.err
