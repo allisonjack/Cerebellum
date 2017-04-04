@@ -20,8 +20,7 @@ end
 
 %% This only works for clusters using Slurm
 JOBN = str2num(getenv('SLURM_ARRAY_TASK_ID'))
-
 cd (SUBJDIR{JOBN})
 
-%% You might need to change the bounding box values
+%% You might need to change the bounding box ('bb') values
 suit_isolate('anat_brain_suit.nii', 'bb', [-76, 76; -120, -6; -90, 15]);
