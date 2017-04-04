@@ -22,4 +22,6 @@ end
 JOBN = str2num(getenv('SLURM_ARRAY_TASK_ID'))
 
 cd (SUBJDIR{JOBN})
-suit_reslice('mean_func_highres_run1.nii', 'mc_anat_brain_suit_snc.mat', 'mask', 'cerebellar_mask.nii');
+
+%% You might need to change the bounding box values
+suit_isolate('anat_brain_suit.nii', 'bb', [-76, 76; -120, -6; -90, 15]);
