@@ -9,6 +9,8 @@
 #SBATCH -p short
 #SBATCH -t 1:00:00
 
+#-p is the name of your desired partition--adjust this accordingly!
+
 source ~/.bashrc
 
 module load matlab
