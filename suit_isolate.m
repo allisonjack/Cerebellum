@@ -5,7 +5,7 @@ clear all
 spm fmri
 
 %% Load IDs
-fid = fopen('/lustre/groups/andi/GA_collab/SUIT/ASD_IDs.txt');
+fid = fopen('/PATH_TO_TEXT_FILE_CONTAINING_A_LIST_OF_IDS/IDs.txt');
 ID = cell(0,1);
 
 while ~feof(fid)
@@ -15,7 +15,7 @@ end
 %% Create array with paths to subject directories
 SUBJDIR = cell(length(ID),1);
 for i = 1:length(ID)
-    SUBJDIR{i} = fullfile('/lustre/groups/andi/GA_collab/SUIT/', ID{i});
+    SUBJDIR{i} = fullfile('/PATH_TO_MAIN_SUIT_DIRECTORY/', ID{i});
 end
 
 %% This only works for clusters using Slurm
