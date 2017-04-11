@@ -30,12 +30,7 @@ do
 done
 
 STUDYDIR=/PATH_TO_YOUR_DIRECTORY/USERNAME/STUDYNAME
-FEATDIR=$STUDYDIR/CHILD/ANALYSIS/PRESTATS_SUIT/${ID}.feat
-SUITDIR=$STUDYDIR/CHILD/SUIT/$ID
-
-MAT=$FEATDIR/reg/example_func2highres.mat
-TEMP=$SUITDIR/filtered_func_highres_temp.nii.gz
-REF=$FEATDIR/reg/highres.nii.gz
+SUITDIR=$STUDYDIR/SUIT/$ID
 
 FXMED=$(fslstats $SUITDIR/filtered_func_suit -P 50)
 BT=$(echo ${FXMED}*.75 | bc -l)
