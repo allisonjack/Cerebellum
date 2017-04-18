@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# set output and error output filenames, %j will be replaced by Slurm with the jobid
-#SBATCH -o suit_normalize%j.out
-#SBATCH -e suit_normalize%j.err 
+#SBATCH -J suit_normalize
+#SBATCH -o suit_normalize_%j.out
+#SBATCH -e suit_normalize_%j.err 
 #SBATCH -N 1
-#SBATCH -p short
-#SBATCH -t 2:00:00
+#SBATCH -p defq
+#SBATCH -t 00:04:00
 #SBATCH --mail-type=BEGIN,END,FAIL 
 #SBATCH --mail-user=YOURUSERNAME@YOUREMAIL.edu
 
