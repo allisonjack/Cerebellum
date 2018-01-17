@@ -24,16 +24,3 @@ sform.print <- as.data.frame(c(t(sform.new)))
 
 OUT <- paste(ID, "_sform_new.txt", sep = "")
 write.table(t(sform.print), OUT, quote = FALSE, row.names = FALSE, col.names = FALSE)
-
-# sform.orig <- read.delim('HAR31503_orig_sform.txt', sep = " ", header = FALSE)
-# 
-# new.mm.x <- 5.676262
-# new.mm.y <- 15.9422
-# new.mm.z <- 7.52367
-# sform.orig <- as.matrix(sform.orig)
-# sform.new <- sform.orig
-# sform.new[1,4] <- new.mm.x
-# sform.new[2,4] <- new.mm.y
-# sform.new[3,4] <- new.mm.z
-# 
-# c(t(sform.new))
